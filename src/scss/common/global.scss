@@ -1,0 +1,22 @@
+:root {}
+
+html {
+  // color: var(--black);
+  // font-family: var(--main-font);
+	font-size: 16px;
+  font-weight: 400;
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: start;
+	min-height: 100%;
+}
+
+img {
+  display: block;
+	max-width: 100%;
+	height: auto;
+}
