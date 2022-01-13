@@ -1,10 +1,13 @@
 {
   "name": "portfolio",
+  "homepage": "https://Nailheart.github.io/",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
+    "gh-pages": "^3.2.3",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-cheerio": "latest",
@@ -23,7 +26,9 @@
   },
   "scripts": {
     "build": "gulp build",
-    "dev": "gulp dev"
+    "dev": "gulp dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
