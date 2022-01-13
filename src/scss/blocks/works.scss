@@ -1,0 +1,10 @@
+.works { @include section; }
+.works__title { @include title; }
+
+.works__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 30px 15px;
+
+  @include media-min(md) { gap: 30px; }
+}

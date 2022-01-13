@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @include media-min(md) { gap: 30px; }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
+  min-width: 210px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: .2s;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--theme-bg);
+    background-color: var(--theme-fg);
+    border-color: var(--theme-fg);
+  }
+
+  @include media-max(md) { flex-grow: 1; }
+}
+
+.social__icon { margin-right: 10px; }

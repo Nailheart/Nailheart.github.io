@@ -1,0 +1,16 @@
+.footer { 
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  @include media-min(md) {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  @include media-min(xl) {
+    padding-top: 70px;
+    padding-bottom: 90px;
+  }
+}
+
+.footer__title { text-align: center; }
+.footer__container { @include container; }

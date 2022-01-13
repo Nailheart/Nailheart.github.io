@@ -1,0 +1,35 @@
+@mixin container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media-min(md) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+@mixin section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--theme-border);
+
+  @include media-min(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include media-min(lg) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @include media-min(xl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@mixin title {
+  font-size: 1.5rem;
+
+  @include media-max(md) { text-align: center; }
+}

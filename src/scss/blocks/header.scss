@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--theme-bg);
+  transition: .2s;
+
+  &--sticky {	
+    box-shadow: 0 0 25px var(--color-grey);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    + main { padding-top: 60px; }
+  }
+}
+
+.header__container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

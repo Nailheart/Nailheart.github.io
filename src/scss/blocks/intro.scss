@@ -1,0 +1,9 @@
+.intro { @include section; }
+
+.intro__lead {
+  font-size: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
