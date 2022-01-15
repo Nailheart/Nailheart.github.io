@@ -4,7 +4,7 @@ import cheerio from 'gulp-cheerio';
 import concat from 'gulp-concat';
 import csso from 'gulp-csso';
 import htmlmin from 'gulp-htmlmin';
-import imagemin, { mozjpeg, optipng, svgo } from 'gulp-imagemin';
+import imagemin, { mozjpeg, optipng} from 'gulp-imagemin';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import sourcemap from 'gulp-sourcemaps';
@@ -96,13 +96,6 @@ export const img = () => src(`${path.img.root}**/*`)
   .pipe(imagemin([
     mozjpeg({quality: 75, progressive: true}),
     optipng({optimizationLevel: 3})
-    // svgo({
-    //   plugins: [
-    //     { removeViewBox: false },
-    //     { cleanupIDs: true },
-    //     { removeDimensions: true }
-    //   ]
-    // })
   ]))
   .pipe(dest(path.img.save))
   .pipe(webp({quality: 90}))
