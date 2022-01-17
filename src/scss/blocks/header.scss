@@ -3,7 +3,7 @@
   transition: .2s;
 
   &--sticky {	
-    box-shadow: 0 0 25px var(--color-grey);
+    box-shadow: 0 0 25px var(--theme-border);
     position: fixed;
     top: 0;
     left: 0;

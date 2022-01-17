@@ -2,11 +2,6 @@
   display: block;
   margin-bottom: 15px;
   border-radius: 6px;
-  box-shadow: 0 0 25px rgba(208, 208, 208, .25);
-  transition: .2s;
-
-  &:hover,
-  &:focus-visible { box-shadow: 0 0 25px rgba(208, 208, 208, .75); }
 
   @include media-min(md) { margin-bottom: 30px; }
 }
@@ -36,7 +31,7 @@
     content: "";
     width: 0;
     height: 1px;
-    background-color: #ff4b55;
+    background-color: var(--color-red);
     position: absolute;
     top: 100%;
     left: 0;
@@ -46,6 +41,22 @@
   &:hover,
   &:focus-visible {
     &::before { width: 100%; }
+  }
+}
+
+.work__social { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  margin-left: 10px;
+}
+
+.work__social-link {
+  transition: .2s;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--theme-accent);
   }
 }
 
