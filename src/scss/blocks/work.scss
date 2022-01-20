@@ -2,6 +2,12 @@
   display: block;
   margin-bottom: 15px;
   border-radius: 6px;
+  transition: .2s;
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: var(--theme-shadow);
+  }
 
   @include media-min(md) { margin-bottom: 30px; }
 }
