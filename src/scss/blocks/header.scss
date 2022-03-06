@@ -1,5 +1,6 @@
 .header {
   background-color: var(--theme-bg);
+  border-bottom: 1px solid var(--theme-border);
   transition: .2s;
 
   &--sticky {	
