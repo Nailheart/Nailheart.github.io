@@ -4,7 +4,7 @@ import cheerio from 'gulp-cheerio';
 import concat from 'gulp-concat';
 import csso from 'gulp-csso';
 import htmlmin from 'gulp-htmlmin';
-import imagemin, { mozjpeg, optipng} from 'gulp-imagemin';
+import imagemin, { mozjpeg, optipng, svgo } from 'gulp-imagemin';
 import plumber from 'gulp-plumber';
 import rename from 'gulp-rename';
 import sourcemap from 'gulp-sourcemaps';
@@ -75,8 +75,9 @@ export const scripts = () => src(path.scripts.root)
 // Sprite
 export const sprite = () => src(`${path.img.root}icons/*.svg`)
   .pipe(svgmin({
+    multipass: true,
     plugins: [
-      { removeViewBox: false }
+      { removeViewBox: false, }
     ]
   }))
   .pipe(cheerio({
@@ -95,7 +96,8 @@ export const sprite = () => src(`${path.img.root}icons/*.svg`)
 export const img = () => src(`${path.img.root}**/*`)
   .pipe(imagemin([
     mozjpeg({quality: 75, progressive: true}),
-    optipng({optimizationLevel: 3})
+    optipng({optimizationLevel: 3}),
+    svgo()
   ]))
   .pipe(dest(path.img.save))
   .pipe(webp({quality: 90}))
