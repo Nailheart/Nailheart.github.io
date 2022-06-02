@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nailheart - portfolio</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body id="page-top">
+  <header class="header">
+    <div class="header__container">
+      <a class="logo" href="/">
+        <svg class="logo__icon" width="24" height="24" aria-label="Home">
+          <use href="img/sprite.svg#home"></use>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html#projects">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="index.html#experience">Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="index.html#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="">Games</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="toggle-theme" type="button" aria-label="Switch theme">
+        <svg class="toggle-theme__icon" width="24" height="24">
+          <use class="toggle-theme__icon-light" href="img/sprite.svg#sun"></use>
+          <use class="toggle-theme__icon-dark" href="img/sprite.svg#moon"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__container">
+      <section class="works">
+        <h2 class="works__title">Simple games</h2>
+
+        <div class="works__list">
+          <article class="work">
+            <a class="work__img-link" href="https://nailheart.github.io/memory-game" target="_blank">
+              <img class="work__img" src="img/works/memory-game.jpg" alt="Memory game">
+            </a>
+
+            <div class="work__inner">
+              <div class="work__inner-top">
+                <h3 class="work__title">
+                  <a class="work__title-link" href="https://nailheart.github.io/memory-game" target="_blank">Memory game</a>
+                </h3>
+
+                <div class="work__social">
+                  <a class="work__social-link" href="https://github.com/Nailheart/memory-game" aria-label="Github" target="_blank" rel="noopener noreferrer">
+                    <svg class="work__social-icon" width="24" height="24">
+                      <use href="img/sprite.svg#github"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <p class="work__description">Responsive memory game with awesome "new&nbsp;game" button</p>
+              <span class="work__hint">HTML - SCSS - JS</span>
+            </div>
+          </article>
+
+          <article class="work">
+            <a class="work__img-link" href="#" target="_blank">
+              <img class="work__img" src="img/works/breakout-game.jpg" alt="Breakout game">
+            </a>
+
+            <div class="work__inner">
+              <div class="work__inner-top">
+                <h3 class="work__title">
+                  <a class="work__title-link" href="#" target="_blank">Breakout</a>
+                </h3>
+
+                <div class="work__social">
+                  <a class="work__social-link" href="https://github.com/Nailheart/Breakout" aria-label="Github" target="_blank" rel="noopener noreferrer">
+                    <svg class="work__social-icon" width="24" height="24">
+                      <use href="img/sprite.svg#github"></use>
+                    </svg>
+                  </a>
+                  <a class="work__social-link" href="https://developer.mozilla.org/ru/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript" aria-label="MDN tutorial 2D breakout game using pure JavaScript" target="_blank" rel="noopener noreferrer">
+                    <svg class="work__social-icon" width="24" height="24">
+                      <use href="img/sprite.svg#link"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <p class="work__description">2D breakout game using pure JavaScript</p>
+              <span class="work__hint">HTML - CSS - JS - Canvas</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Contacts</h2>
+
+      <div id="contacts" class="social">
+        <a class="social__link" href="mailto:nailheart4@gmail.com" target="_blank" rel="noopener noreferrer">
+          <svg class="social__icon" width="24" height="24">
+            <use href="img/sprite.svg#email"></use>
+          </svg>
+          <span class="social__text">Email</span>
+        </a>
+        <a class="social__link" href="https://join.skype.com/invite/D5WcE8DUXPR9" target="_blank" rel="noopener noreferrer">
+          <svg class="social__icon" width="24" height="24">
+            <use href="img/sprite.svg#skype"></use>
+          </svg>
+          <span class="social__text">Skype</span>
+        </a>
+        <a class="social__link" href="https://github.com/Nailheart" target="_blank" rel="noopener noreferrer">
+          <svg class="social__icon" width="24" height="24">
+            <use href="img/sprite.svg#github"></use>
+          </svg>
+          <span class="social__text">Github</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>

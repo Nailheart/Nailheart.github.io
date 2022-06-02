@@ -7,12 +7,13 @@
   <title>Nailheart - portfolio</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-
+<body id="page-top">
   <header class="header">
     <div class="header__container">
-      <a class="logo" href="/">
-        <img src="img/knight.png" width="24" height="24" alt="Hollow knight">
+      <a class="logo" href="#page-top">
+        <svg class="logo__icon" width="24" height="24" aria-label="Home">
+          <use href="img/sprite.svg#home"></use>
+        </svg>
       </a>
 
       <nav class="nav">
@@ -25,6 +26,9 @@
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="games.html">Games</a>
           </li>
         </ul>
       </nav>
